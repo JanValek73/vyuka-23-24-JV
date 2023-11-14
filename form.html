@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrační formulář</title>
+<style>
+    .btn {
+        margin-top: 5px;
+    }
+    .my-1 {
+        margin-top: 8px;
+    }
+    .div {
+        margin-top: 8px;
+    }
+
+</style>
+</head>
+<body>
+    <h1>Registrační formulář</h1>
+    <form>
+    <div><label for="krestni">Křestní jméno</label></div>
+    <div><input type="text" name="krestni" placeholder="Vaše křestní jméno"></div>
+    <div><label for="prijmeni">Příjmení</label></div>
+    <div><input type="text" name="prijmeni" placeholder="Vaše příjmení"></div>
+    <div class="btn"><input type="submit" value="Odeslat"></div>
+    <div class="my-1">
+        <label for="muz">Muž</label>
+        <input type="radio" name="pohlaví" id="muz">
+        <label for="zena">Žena</label>
+        <input type="radio" name="pohlavi" id="zena">
+        <label for="jine">Jiné</label>
+        <input type="radio" name="pohlavi" id="otr">
+    </div>
+    <div class="my-1">
+        <label for="html">HTML</label>
+        <input type="checkbox"name="html" id="html">
+        <label for="css">CSS</label>
+        <input type="checkbox"name="css" id="css">
+        <label for="javascript">Javascript</label>
+        <input type="checkbox"name="java" id="java">
+    </div>
+    <label for="cars">Oblíbené auto</label>
+    <select name="cars" id="cars">
+    <div>
+        <option value="volvo">Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="skoda">Škoda</option>
+        <option value="mercedes">Mercedes</option>
+
+
+    </div>
+
+
+
+
+    </select>
+
+
+
+</form>
+
+
+</body>
+</html>
