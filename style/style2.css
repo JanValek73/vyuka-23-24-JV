@@ -1,0 +1,35 @@
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'arial';   
+      }
+
+    
+       .googlexd {
+        background-color: #262626;
+       }
+
+       .guglh1 {
+            color: white;
+            margin-top: 180px;
+            font-size: 5rem;
+            position: relative;
+            left: 450px;
+      }
+      section {
+            position: relative;
+            width: 100%;
+            width: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+      section .main .searchBx {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            outline: none;
+            font-size: 16px;
+            border-radius: 30px;
+      }
