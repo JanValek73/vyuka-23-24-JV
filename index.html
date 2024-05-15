@@ -1,86 +1,105 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoL - Esport</title>
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Galerie výherců LoL Worlds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            margin-top: 20px; /* Snížení mezery mezi nadpisem a galerií obrázků */
+        }
+        .gallery-container {
+            width: 100%;
+            background: url('') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px; /* Přidání políčka mezi galerií a okrajem okna */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px; /* Přidání políčka mezi galerií a pozadím */
+        }
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #fff;
+            border-radius: 5px;
+        }
+        .caption {
+            margin-top: 5px;
+            font-size: 1em;
+            color: #fff;
+        }
+
+        /* Media queries pro responzivitu */
+        @media screen and (max-width: 768px) {
+            .gallery-item {
+                flex: 1 1 calc(50% - 20px);
+                max-width: calc(50% - 20px);
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .gallery-item {
+                flex: 1 1 calc(100% - 20px);
+                max-width: calc(100% - 20px);
+            }
+        }
+    </style>
 </head>
-        <header class="header">
-            <a href="#" class="LOL">League of Legends | E-sport</a>
-            <nav class="navbar">
-                <a href="#">Základy</a>
-                <a href="#">Vznik</a>
-                <a href="./tabulka.html">Výsledky</a>
-                <a href="#"></a>
-                <a href="#"></a>
-            </nav>        
-        </header>
-                <div id="showcase">
-                <div class="showcase-content">
-                    <h4 class="l-heading">⁠DRX</h4>
-                    <p class="lead">
-                     Moment kdy DRX vyhráli světový šampionát 2022.
-                    </p>
-                    <a href="#what" class="btn">Dozvědět se víc</a>
-                </div>
-                </div>
-<section id="what" class="bg-light py-1">
-    <div class="container"></div>
-        <h2 class="m-heading text-center">
-                <span class="text-primary">Dozvíte se, zde...</span>
-         </h2>
-        <div class="items">
-        <div class="item">
-          
-        <div>
-                <i class="fa-solid fa-book-bookmark"></i>
-                <h3>Historii</h3>
-                <p>Výsledky minulých worlds. </p>
+<body>
+    <h1>Výherci LoL Worlds (2018-2023)</h1>
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="obrazky/ig.jpg" alt="Výherce 2018">
+                <div class="caption">Výherce 2018 IG</div>
+            </div>
+            <div class="gallery-item">
+                <img src="obrazky/fpx.jpg" alt="Výherce 2019">
+                <div class="caption">Výherce 2019 FPX</div>
+            </div>
+            <div class="gallery-item">
+                <img src="obrazky/dwg.jpeg" alt="Výherce 2020">
+                <div class="caption">Výherce 2020 DWG</div>
+            </div>
+            <div class="gallery-item">
+                <img src="obrazky/edg.jpg" alt="Výherce 2021">
+                <div class="caption">Výherce 2021 EDG</div>
+            </div>
+            <div class="gallery-item">
+                <img src="obrazky/drx.jpg" alt="Výherce 2022">
+                <div class="caption">Výherce 2022 DRX</div>
+            </div>
+            <div class="gallery-item">
+                <img src="obrazky/t1.jpg" alt="Výherce 2023">
+                <div class="caption">Výherce 2023 T1</div>
             </div>
         </div>
-        <div class="item">
-            <div>
-                <i class="fa-solid fa-person"></i>
-                <h3>Příběhy</h3>
-                <p>Příběhy úspěšných hráčů.</p>
-            </div>
-        </div>
-        <div class="item">
-            <div>
-                <i class="fa-solid fa-laptop"></i>
-                <h3>E-sport</h3>
-                <p>Proč je e-sport super.</p>
-            </div>
-        </div>
-        <div class ="item">
-            <i class="fa-solid fa-users-viewfinder"></i>
-                <h3>Sledovanost</h3>
-                <p>Kolik lidí sleduje e-sport.</p>
-
-        </div>
-    </section>
-<section id="who">
-    <div class="who-img"></div>
-    <div class="who-text bg-dark p-2"></div>
-        <h2 class="-m-heading">
-            <span class="text-primary">Zdroje</span>
-            
-        </h2>
-
-        <ul class="list">
-            
-            <li>1. <a href="https://en.wikipedia.org/wiki/League_of_Legends_World_Championship" target="_blank">
-                https://en.wikipedia.org/wiki/League_of_Legends_World_Championship</a>  </li>
-            </ul>
-      
-</section>
- <footer class="text-center-footer">
-<p>2023 | Jan Válek</p>
- </footer>   
-
+    </div>
 </body>
 </html>
-
